@@ -4,7 +4,7 @@ PORT="${PORT:-7500}"
 
 _update() {
 	echo "Updating Pavlov VR";
-        cd ~/Steam && ./steamcmd.sh +login anonymous +force_install_dir /home/steam/pavlovserver +app_update 622970 +exit
+        cd ~/Steam && ./steamcmd.sh +force_install_dir /home/steam/pavlovserver +login anonymous +app_update 622970 +exit
 	./steamcmd.sh +login anonymous +app_update 1007 +quit
         mkdir -p ~/.Steam/sdk64
         cp ~/Steam/steamapps/common/Steamworks\ SDK\ Redist/linux64/steamclient.so ~/.steam/sdk64/steamclient.so
