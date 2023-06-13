@@ -7,7 +7,7 @@ _update() {
         cd ~/Steam && ./steamcmd.sh +force_install_dir /home/steam/pavlovserver +login anonymous +app_update 622970 +exit
 	./steamcmd.sh +login anonymous +app_update 1007 +quit
         mkdir -p ~/.Steam/sdk64
-        cp ~/Steam/steamapps/common/Steamworks\ SDK\ Redist/linux64/steamclient.so ~/.steam/sdk64/steamclient.so
+        cp ~/Steam/steamapps/common/Steamworks\ SDK\ Redist/linux64/steamclient.so ~/.Steam/sdk64/steamclient.so
         cp ~/Steam/steamapps/common/Steamworks\ SDK\ Redist/linux64/steamclient.so ~/pavlovserver/Pavlov/Binaries/Linux/steamclient.so
 }
 
